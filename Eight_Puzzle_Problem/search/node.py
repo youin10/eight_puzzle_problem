@@ -5,11 +5,12 @@ class Node:
     Adapted From: https://github.com/aimacode/aima-python/blob/master/search.py
     """
 
-    def __init__(self, state, parent=None, action=None):
+    def __init__(self, state, parent=None, action=None, path_cost = 0):
         self.state = state
         self.parent = parent
         self.action = action
         self.depth = 0
+        self.path_cost = path_cost
         if parent:
             self.depth = parent.depth + 1
 
