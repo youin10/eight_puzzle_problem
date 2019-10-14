@@ -37,3 +37,10 @@ class EightPuzzle(Problem) :
     
     def goal_test(self, state) :
         return state == self.goal
+    
+    def h(self, node) :
+        num = 0
+        
+        #휴리스틱 함수
+        
+        return num
