@@ -1,5 +1,5 @@
 from eight_puzzle import EightPuzzle, Operation, State
-from search import breadth_first_tree_search, Node, Problem, depth_limited_search, iterative_deepening_search
+from search import breadth_first_tree_search, Node, Problem, depth_limited_search, iterative_deepening_search, astar_search
 import time
 import random
 
