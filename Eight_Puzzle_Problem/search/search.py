@@ -3,6 +3,7 @@ from collections import deque
 import heapq
 import sys
 import random
+import functools
 
 def breadth_first_tree_search(problem):
     """Search the shallowest nodes in the search tree first.
