@@ -28,7 +28,7 @@ def main () :
     print('걸린 시간 :', endTime - startTime)
 
 def mix (initialState, count) :
-    state = initialState
+    state = copy.deepcopy(initialState)
 
     #퍼즐을 섞는 코드
     
