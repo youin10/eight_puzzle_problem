@@ -20,8 +20,8 @@ class Node:
 
     def child_node(self, problem, action):
         """Get the child node from applying the given action."""
-        next_node = problem.result(self.state, action)
-        return Node(next_node, self, action)
+        next_node = problem.result(self.state, action, self.path_cost + 1)
+        return Node(next_node, self, action, self.path_cost + 1)
 
     def solution(self):
         """Return the sequence of actions to go from the root to this node."""
